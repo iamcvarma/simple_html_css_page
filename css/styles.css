@@ -200,7 +200,7 @@ a {
   font-weight: 600;
   outline: 0;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -296,7 +296,8 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 2 rem;
+  padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .button {
@@ -423,6 +424,9 @@ a {
 
 .media__image {
   margin-top: 1rem;
+}
+.media__body p {
+  color: #fff;
 }
 
 /* Quote */
@@ -598,7 +602,7 @@ a {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   max-width: 100vh;
-  opacity: 100;
+  opacity: 1;
 }
 
 /* Blocks */
@@ -746,13 +750,14 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-heading);
 }
 
 @media screen and (min-width: 768px) {
@@ -775,15 +780,18 @@ a {
 /* Features */
 .feature {
   gap: 4rem 2rem;
+  margin: 12rem 0;
 }
 
 .feature__heading {
-  margin: 1rem 0rem;
+  margin: 1rem 0;
 }
 
+feature:first-of-type {
+  margin-top: 6rem;
+}
 .feature__image {
   width: 100%;
-  margin: 12rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -791,9 +799,7 @@ a {
     order: 2;
   }
 }
-feature:first-of-type {
-  margin-top: 6rem;
-}
+
 /* Showcase Block */
 .block-showcase__image > img {
   width: 100%;
@@ -878,6 +884,6 @@ feature:first-of-type {
     border: 0;
   }
   .footer__heading {
-    font-smooth: 1.6rem;
+    font-size: 1.6rem;
   }
 }
